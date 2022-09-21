@@ -1,17 +1,14 @@
-package security;
+package com.example.demo.security;
 
 import com.google.common.collect.Sets;
-import org.springframework.security.config.core.GrantedAuthorityDefaults;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
 
 import java.util.Set;
 
-import static security.ApplicationPermission.*;
-
 public enum applicationRole {
+    /*
     student(Sets.newHashSet()),
 
-    admin(Sets.newHashSet(COURSE_READ, STUDENT_READ, STUDENT_WRITE, COURSE_WRITE));
+    admin(Sets.newHashSet(ApplicationPermission.COURSE_READ, ApplicationPermission.STUDENT_READ, ApplicationPermission.STUDENT_WRITE, ApplicationPermission.COURSE_WRITE));
     private final Set<ApplicationPermission> permissionSet;
 
     applicationRole(Set<ApplicationPermission> permissionSet) {
@@ -21,4 +18,6 @@ public enum applicationRole {
     public Set<ApplicationPermission> getPermissionSet() {
         return permissionSet;
     }
+
+     */
 }

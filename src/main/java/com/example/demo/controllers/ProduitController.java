@@ -24,7 +24,7 @@ public class ProduitController {
     ProduitMatiereAssoRepo assoRepo;
 
     @GetMapping("/{id}")
-    @PreAuthorize("hasAnyRole('ROLE_admin')")
+
     public Optional<Produit> getproduit(@PathVariable Long id ){
         return produitRepo.findById(id);
     }
@@ -35,7 +35,7 @@ public class ProduitController {
     }
 
     @PostMapping("/add")
-    @PreAuthorize("hasAuthority('Student:write')")
+
     public void addProduit(@RequestBody Produit produit){
         produitRepo.save( produit);
     }

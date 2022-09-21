@@ -1,7 +1,7 @@
-package security;
+package com.example.demo.security;
 
 public enum ApplicationPermission {
-    STUDENT_READ("student:read"),
+  /*  STUDENT_READ("student:read"),
     STUDENT_WRITE("student:write"),
     COURSE_READ("course:read"),
     COURSE_WRITE("coure:write");
@@ -15,4 +15,6 @@ public enum ApplicationPermission {
     public String getPermission() {
         return permission;
     }
+
+   */
 }
