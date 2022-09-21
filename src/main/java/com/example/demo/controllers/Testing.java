@@ -23,7 +23,7 @@ public class Testing {
     private MyUserDetailsService userDetailsService;
     @GetMapping("/admin")
     public String hello(){
-        return "hello";
+        return "helloa";
     }
 
 
